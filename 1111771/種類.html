@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>種類</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      * {
+        font-family: FangSong, "仿宋", FangSong_GB2312, "仿宋_GB2312", serif;
+      }
+      body {
+        background-color: lightgray;
+      }
+      #backToTop {
+        position: fixed;
+        bottom: 30px; 
+        right: 30px;
+        display: none;
+        background-color: #f2f3f4;
+        color: gray;
+        border: 2px solid #f2f3f4;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+      #backToTop:hover {
+        background-color: #286090;
+        color: white;
+      }
+      .image-border {
+        border: 1px solid #f2f3f4;
+        border-radius: 10px;
+      }
+      .navbar-brand img {
+        margin: 0 auto;
+      }
+      .navbar-nav > li > a {
+        font-size: 18px;
+      }
+      hr.footer-divider {
+        margin: 20px auto;
+        width: 100%;
+        border-top: 5px solid #ddd;
+      }
+      #contents {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+      }
+      section {
+        border: 5px dotted #ccc;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        margin: 0 auto;
+        max-width: 800px;
+        background-color: white;
+        border-radius: 900px / 30px;
+      }
+      ul {
+        list-style-type: disc; 
+        padding-left: 20px;    
+      }
+      li {
+        font-size: 20px;
+      }
+      header {
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      @media (max-width: 768px) {
+        .navbar-nav > li > a {
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.25rem;
+        }
+        li {
+          font-size: 18px;
+        }
+        section {
+          margin: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">
+            <img class="image-border" alt="網站品牌標誌" src="../1111771/nail.jpg" width="25" height="25">
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">導覽按鈕</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="2004_nails.html">2004_nails</a></li>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="種類.html">種類</a></li>
+            <li><a href="形狀.html">形狀</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">風格<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="1.html">法式</a></li>
+                <li><a href="2.html">貓眼</a></li>
+                <li><a href="3.html">素色</a></li>
+                <li><a href="4.html">節日</a></li>
+                <li><a href="5.html">其他</a></li>
+              </ul>
+            </li>
+            <li><a href="預約.html">預約</a></li>
+            <li><a href="網站製作分析.html">網站製作分析</a></li>
+            <li><a href="網站的主要內容.html">網站的主要內容</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search" id="searchForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="請輸入關鍵字">
+            </div>
+            <button type="submit" class="btn btn-default">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main id="contents">
+      <header>
+        <h1>種類</h1>
+      </header>
+      <section>
+        <h2><strong>1、凝膠美甲</strong></h2>
+        <ul>
+          <li>可維持3星期至1個月</li>
+          <li>施作時間約1.5-2個小時</li>
+          <li>不僅比指甲油維持更長時間外，又能依據需求來做美麗的造型！</li>
+        </ul>
+        <h2><strong>2、水晶指甲</strong></h2>
+        <ul>
+          <li>可維持1至1.5個月</li>
+          <li>施作時間需要2-3小時</li>
+          <li>大多為需要矯正甲型、以及想要調整咬甲習慣的人</li>
+        </ul>
+        <h2><strong>3、貼片美甲</strong></h2>
+        <ul>
+          <li>可維持1星期</li>
+          <li>舉凡藥妝品店、超商百貨基本上都能輕鬆入手</li>
+          <li>因為凝膠貼片是屬於黏貼於指甲上，所以洗頭、抓癢時容易脫落</li>
+        </ul>
+        <center><img src="../1111771/種1.png" alt="差異比較圖"></center>
+      </section>
+      <p><a href="index.html">返回首頁</a></p>
+    </main>
+    <script>
+      window.addEventListener('scroll', function () {
+        const backToTopButton = document.getElementById('backToTop');
+        if (window.scrollY > 200) { 
+          backToTopButton.style.display = 'block';
+        } else {
+          backToTopButton.style.display = 'none';
+        }
+      });
+
+      document.getElementById('backToTop').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+      });
+    </script>
+    <hr class="footer-divider">
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+      <p>&copy;2004_nails&middot;
+        <a href="#">隱私權政策</a>&middot;
+        <a href="#">服務條款</a>
+      </p>
+    </footer>
+  </body>
+</html>

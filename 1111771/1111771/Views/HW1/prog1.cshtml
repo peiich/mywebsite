@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "prog1";
+}
+
+<h1>prog1</h1>
+<form>
+    <label>表格橫列數:</label>
+    <input type="text" name="columns" /><br />
+
+    <label>表格縱行數:</label>
+    <input type="text" name="rows" /><br />
+
+    <label>顯示文字:</label>
+    <input type="text" name="text" /><br />
+
+    <button type="submit">確定</button>
+</form>
+@if (ViewBag.Columns != null && ViewBag.Rows != null)
+{
+    <h2>結果：</h2>
+    <p>橫列數: @ViewBag.Columns</p>
+    <p>縱行數: @ViewBag.Rows</p>
+    <p>顯示文字: @ViewBag.Text</p>
+}
+

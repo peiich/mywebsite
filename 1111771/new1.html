@@ -1,0 +1,66 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // 获取表单数据
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $appointment_date = $_POST['appointment_date'];
+    $nail_service = $_POST['nail_service'];
+    $message = $_POST['message'];
+    // 处理数据（如保存到数据库或发送邮件）
+    // 此处为示例，省略实际邮件发送操作
+    // $to = "peggyw0206@gmail.com";
+    // $subject = "預約";
+    // $body = "姓名: $name\n電話: $phone\n電子郵件: $email\n預約日期: $appointment_date\n選擇美甲服務: $nail_service\n備註: $message";
+    // $headers = "From: $email";
+    // mail($to, $subject, $body, $headers);
+}
+?>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約成功</title>
+    <style>
+        body {
+            font-family: FangSong, "仿宋", FangSong_GB2312, "仿宋_GB2312", serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        .message-box {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #4CAF50;
+            font-family: FangSong, "仿宋", FangSong_GB2312, "仿宋_GB2312", serif;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+            font-family: FangSong, "仿宋", FangSong_GB2312, "仿宋_GB2312", serif;
+        }
+        a {
+            font-family: FangSong, "仿宋", FangSong_GB2312, "仿宋_GB2312", serif;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>預約成功</h1>
+        <p>您的預約已成功提交，我們會盡快聯繫您！</p>
+        <a href="index.html">返回首頁</a>
+    </div>
+</body>
+</html>

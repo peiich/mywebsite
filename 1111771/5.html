@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>其他</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      * {
+        font-family: FangSong, "仿宋", FangSong_GB2312, "仿宋_GB2312", serif;
+      }
+      body {
+        background-color: lightgray;
+        height: 1500px;
+      }
+      #backToTop {
+        position: fixed;
+        bottom: 30px; 
+        right: 30px;
+        display: none;
+        background-color: #f2f3f4;
+        color: gray;
+        border: 2px solid #f2f3f4;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+      #backToTop:hover {
+        background-color: #286090;
+      }
+      .image-border {
+        border: 1px solid #f2f3f4;
+        border-radius: 10px;
+      }
+      .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .navbar-brand img {
+        display: block;
+        margin: 0 auto;
+      }
+      .navbar-nav > li > a {
+        font-size: 18px;
+      }
+      .word {
+        font-size: 18px;
+      }
+      .grid-container {
+        column-count: 5;
+        column-gap: 16px;
+        max-width: 1500px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+
+      @media (max-width: 1200px) {
+        .grid-container {
+          column-count: 4;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .grid-container {
+          column-count: 3;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .grid-container {
+          column-count: 2;
+        }
+      }
+
+      .grid-item {
+        break-inside: avoid;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+        background: white;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+      }
+
+      .grid-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .grid-item img {
+        width: 100%;
+        display: block;
+        border-radius: 16px 16px 0 0;
+      }
+
+      .grid-item-content {
+        padding: 12px;
+      }
+
+      .user-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .user-avatar {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .user-name {
+        font-size: 14px;
+        color: #111;
+      }
+      hr.footer-divider {
+        margin: 20px auto;
+        width: 100%;
+        border-top: 5px solid #ddd;
+      }
+    .vertical-dots {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #ddd;
+      border-radius: 50%;
+      margin: 5px 0;
+    }
+	  
+    </style>
+  </head>
+  <body>
+    <!-- 原有的導覽列 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">
+            <img class="image-border" alt="網站品牌標誌" src="../1111771/nail.jpg" width="25" height="25">
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">導覽按鈕</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="2004_nails.html">2004_nails</a></li>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="種類.html">種類</a></li>
+            <li><a href="形狀.html">形狀</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">風格<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="1.html">法式</a></li>
+                <li><a href="2.html">貓眼</a></li>
+                <li><a href="3.html">素色</a></li>
+                <li><a href="4.html">節日</a></li>
+                <li><a href="5.html">其他</a></li>
+              </ul>
+            </li>
+            <li><a href="預約.html">預約</a></li>
+            <li><a href="網站製作分析.html">網站製作分析</a></li>
+            <li><a href="網站的主要內容.html">網站的主要內容</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search" id="searchForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="請輸入關鍵字">
+            </div>
+            <button type="submit" class="btn btn-default">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+<section>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="../1111771/5/519.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/502.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/503.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/504.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/505.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/506.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/507.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/508.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/509.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/510.png" alt="其他">
+    </div>
+    <div class="grid-item">
+      <img src="../1111771/5/511.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/512.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/513.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/514.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/515.png" alt="其他">
+    </div>
+    <div class="grid-item">
+      <img src="../1111771/5/516.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/517.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/518.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/501.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/520.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/521.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/522.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/523.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/524.png" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/525.jpg" alt="其他">
+    </div>
+    <div class="grid-item">
+      <img src="../1111771/5/526.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/527.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/528.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/529.jpg" alt="其他">
+    </div>
+
+    <div class="grid-item">
+      <img src="../1111771/5/530.png" alt="其他">
+    </div>
+  </div>
+</section>
+  <div class="vertical-dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+    <button id="backToTop">back to top</button>
+    <hr class="footer-divider">
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+      <p>&copy;2004_nails&middot;
+        <a href="#">隱私權政策</a>&middot;
+        <a href="#">服務條款</a>
+      </p>
+    </footer>
+
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const backToTopButton = document.getElementById('backToTop');
+        if (window.scrollY > 200) { 
+          backToTopButton.style.display = 'block';
+        } else {
+          backToTopButton.style.display = 'none';
+        }
+      });
+
+      document.getElementById('backToTop').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Prevent the form submission
+      document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

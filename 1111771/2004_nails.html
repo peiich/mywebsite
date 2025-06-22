@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2004_nails</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      * {
+        font-family: FangSong, "仿宋", FangSong_GB2312, "仿宋_GB2312", serif;
+      }
+      body {
+        background-color: lightgray;
+      }
+      #backToTop {
+        position: fixed;
+        bottom: 30px; 
+        right: 30px;
+        display: none;
+        background-color: #f2f3f4;
+        color: gray;
+        border: 2px solid #f2f3f4;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+      #backToTop:hover {
+        background-color: #286090;
+        color: white;
+      }
+      .image-border {
+        border: 1px solid #f2f3f4;
+        border-radius: 10px;
+      }
+      .navbar-brand img {
+        margin: 0 auto;
+      }
+      .navbar-nav > li > a {
+        font-size: 18px;
+      }
+      .bg-success {
+        background-color: skyblue; 
+        color: #272727;      
+      }
+      p {
+        text-align: center;
+        margin: 0;
+        line-height: 1.6;
+      }
+	  .container {
+	  display: flex;
+	  width: 80%;
+	  border: 3px dashed #ADADAD;
+	  padding: 20px;
+	  box-sizing: border-box;
+	  background-color: #FCFCFC; 
+	  margin-bottom: 20px; 
+	  min-height: 400px; 
+	  }
+     .image-section, .text-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      }
+	  .image-section {
+	  width: 33.33%;
+	  padding: 10px;
+	  }
+	  .image-section img {
+	  width: 100%;
+	  height: auto;
+	  border: 2px solid rgba(128, 128, 128, 0.5); 
+	  border-radius: 5px; 
+	 }
+      .image-border {
+	  border: 1px solid #f2f3f4;
+	  border-radius: 10px;
+      }
+      .text-section {
+        width: 66.66%;
+        padding: 10px;
+		font-size: 18px;
+      }
+      .text-section h1, .text-section h4 {
+        margin: 0 0 10px;
+      }
+      .text-section ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+	  .text-section p {
+	  font-size: 18px;
+	  text-align: left !important;
+	  }
+      hr.footer-divider {
+        margin: 20px auto;
+        width: 100%;
+        border-top: 5px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">
+            <img class="image-border" alt="網站品牌標誌" src="../1111771/nail.jpg" width="25" height="25">
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">導覽按鈕</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="2004_nails.html">2004_nails</a></li>
+			<li><a href="index.html">首頁</a></li>
+            <li><a href="種類.html">種類</a></li>
+            <li><a href="形狀.html">形狀</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">風格<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="1.html">法式</a></li>
+                <li><a href="2.html">貓眼</a></li>
+                <li><a href="3.html">素色</a></li>
+                <li><a href="4.html">節日</a></li>
+                <li><a href="5.html">其他</a></li>
+              </ul>
+            </li>
+            <li><a href="預約.html">預約</a></li>
+            <li><a href="網站製作分析.html">網站製作分析</a></li>
+            <li><a href="網站的主要內容.html">網站的主要內容</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search" id="searchForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="請輸入關鍵字">
+            </div>
+            <button type="submit" class="btn btn-default">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>  
+    <!-- 關於我們 -->
+    <div class="container">
+      <div class="image-section">
+        <img src="../1111771/nail.jpg" alt="品牌介紹圖片">
+      </div>
+      <div class="text-section">
+        <h4><strong>關於我們</strong></h4>
+        <p>歡迎來到 <strong>2004_nails</strong>，一個專注於手部與指尖藝術的專業美甲空間。我們致力於為每一位顧客打造獨一無二的指甲設計，展現個性與美麗。無論是日常妝容的點綴，還是特殊場合的完美配件，我們都能滿足您的需求。現在就預約，開始您的美甲之旅！</p>
+        <h4><strong>我們的特色</strong></h4>
+        <ul>
+          <li><strong>專業團隊：</strong>由經驗豐富的美甲師組成，精通最新的美甲技術與流行趨勢。</li>
+          <li><strong>高品質材料：</strong>採用全球頂級的美甲品牌產品，確保您的指甲健康與美觀。</li>
+          <li><strong>貼心服務：</strong>我們注重每一個細節，提供溫馨、舒適的服務體驗。</li>
+          <li><strong>個性化設計：</strong>根據您的喜好與風格，量身打造專屬的美甲款式。</li>
+        </ul>
+        <h4><strong>品牌使命</strong></h4>
+        <p>我們相信，美麗不僅是一種表現，更是一種自信的態度。透過專業與創意的結合，<strong>2004_nails</strong>希望成為您生活中美好的一部分，讓每一天都充滿光彩。</p>
+      </div>
+    </div>    
+    <!-- 追蹤 -->
+    <div class="container">
+      <div class="image-section">
+        <img src="../1111771/ig1.png" alt="品牌介紹圖片">
+      </div>
+      <div class="text-section">
+        <h4><strong>歡迎追蹤我們的Instagram</strong></h4>
+          <li><strong>隨時得到限時優惠</strong></li>
+          <li><strong>不會錯過最新款</strong></li>
+          <li><strong>有時可以得到專屬折扣</strong></li>
+      </div>
+    </div>
+    <button id="backToTop">back to top</button>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const backToTopButton = document.getElementById('backToTop');
+        if (window.scrollY > 200) { 
+          backToTopButton.style.display = 'block';
+        } else {
+          backToTopButton.style.display = 'none';
+        }
+      });
+
+      document.getElementById('backToTop').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Prevent the form submission
+      document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+      });
+    </script>
+    <hr class="footer-divider">
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+      <p>&copy;2004_nails&middot;
+        <a href="#">隱私權政策</a>&middot;
+        <a href="#">服務條款</a>
+      </p>
+    </footer>
+  </body>
+</html>

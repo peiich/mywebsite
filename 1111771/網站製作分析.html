@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>最喜愛之網頁設計</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      * {
+        font-family: FangSong, "仿宋", FangSong_GB2312, "仿宋_GB2312", serif;
+      }
+      body {
+        background-color: lightgray;
+        height: 1500px;
+      }
+      #backToTop {
+        position: fixed;
+        bottom: 30px; 
+        right: 30px;
+        display: none;
+        background-color: #f2f3f4;
+        color: gray;
+        border: 2px solid #f2f3f4;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+      #backToTop:hover {
+        background-color: #286090;
+      }
+      .image-border {
+        border: 1px solid #f2f3f4;
+        border-radius: 10px;
+      }
+      .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .navbar-brand img {
+        display: block;
+        margin: 0 auto;
+      }
+	  .navbar-nav > li > a {
+      font-size: 18px;
+      }
+      .bg-success {
+        background-color: skyblue; 
+        color:#272727;      
+      }
+	        hr.footer-divider {
+        margin: 20px auto;
+        width: 100%;
+        border-top: 5px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">
+            <img class="image-border" alt="網站品牌標誌" src="../1111771/nail.jpg" width="25" height="25">
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">導覽按鈕</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+		  <li><a href="2004_nails.html">2004_nails</a></li>
+		  <li><a href="index.html">首頁</a></li>
+            <li><a href="種類.html">種類</a></li>
+            <li><a href="形狀.html">形狀</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">風格<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="1.html">法式</a></li>
+                <li><a href="2.html">貓眼</a></li>
+				<li><a href="3.html">素色</a></li>
+				<li><a href="4.html">節日</a></li>
+				<li><a href="5.html">其他</a></li>
+              </ul>
+            </li>
+			<li><a href="預約.html">預約</a></li>
+            <li><a href="網站製作分析.html">網站製作分析</a></li>
+            <li><a href="網站的主要內容.html">網站的主要內容</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search" id="searchForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="請輸入關鍵字">
+            </div>
+            <button type="submit" class="btn btn-default">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>	
+    <div class="container">
+      <center><h1 class="bg-success">Disney+</h1></center>
+      <div class="container">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">名稱及網址</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul>
+                  <li>名稱: Disney+ </li>
+                  <li>網址: <a href="https://www.disneyplus.com/zh-tw?cid=DSS-Search-Google-71700000088689726-&s_kwcid=AL!8468!3!715138647018!e!!g!!disney%2B&gad_source=1&gbraid=0AAAAACzWEUEL9ybnehx9sO40GP4GHFU7h&gclsrc=ds">Disney+ 網址</a></li>
+                </ul>
+              </div>  
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">設計架構與說明</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                Disney+ 的設計架構採用高效能的分散式系統，結合全球CDN（內容分發網路）來提供穩定的高畫質串流服務。平台使用多層加密技術和數位權利管理（DRM）來保護內容版權，確保高安全性。此外，系統採用嚴格的用戶驗證與存取控制，保障用戶資料與隱私。以雲端架構為基礎，Disney+ 能靈活擴展以應對高流量需求，同時提供流暢的使用者體驗。
+                <center><img src="disney1.png" width="500"></center>
+              </div>  
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">為何成為我喜歡的網站</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                我喜歡 Disney+ 是因為它匯聚了迪士尼經典動畫、皮克斯、以及星際大戰等內容，這些都是伴隨我成長的經典作品，充滿了童年的回憶。不僅如此，平台上的內容既適合大人，也非常適合孩子，全家共享時光非常方便。此外，Disney+ 在帳號安全性方面做得非常用心，比起 Netflix 和動畫瘋，它不僅需要帳號密碼登入，還多了一道密碼驗證，確保內容更安全。我認為這樣的機制非常棒，讓人使用起來更加放心。
+                </ul>
+                <center><img src="disney2.png" width="500"></center>
+              </div>  
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">優點缺點</a>
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+                <br>
+                <strong>優點：</strong>
+                <ul>
+                  <li>內容豐富且適合家庭觀賞</li>
+                  <li>獨家推出</li>
+                  <li>價格相對親民</li>
+                  <li>可在多個設備上同時觀看，包括手機、平板和電腦</li>
+                </ul>
+                <strong>缺點：</strong>
+                <ul>
+                  <li>部分地區的內容庫有限，並可能因版權問題缺失特定內容</li>
+                  <li>與Netflix相比，新內容更新頻率可能稍顯不足</li>
+                </ul>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <button id="backToTop">back to top</button>
+
+      <script>
+        window.addEventListener('scroll', function () {
+          const backToTopButton = document.getElementById('backToTop');
+          if (window.scrollY > 200) { 
+            backToTopButton.style.display = 'block';
+          } else {
+            backToTopButton.style.display = 'none';
+          }
+        });
+
+        document.getElementById('backToTop').addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Prevent the form submission
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+        });
+      </script>
+    <hr class="footer-divider">
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+      <p>&copy;2004_nails&middot;
+        <a href="#">隱私權政策</a>&middot;
+        <a href="#">服務條款</a>
+      </p>
+    </footer>
+  </body>
+</html>

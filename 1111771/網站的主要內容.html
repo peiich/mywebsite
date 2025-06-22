@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>網站的主要內容</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      * {
+        font-family: FangSong, "仿宋", FangSong_GB2312, "仿宋_GB2312", serif;
+      }
+      body {
+        background-color: lightgray;
+        height: 1500px;
+      }
+      #backToTop {
+        position: fixed;
+        bottom: 30px; 
+        right: 30px;
+        display: none;
+        background-color: #f2f3f4;
+        color: gray;
+        border: 2px solid #f2f3f4;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+      #backToTop:hover {
+        background-color: #286090;
+      }
+      .image-border {
+        border: 1px solid #f2f3f4;
+        border-radius: 10px;
+      }
+      .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .navbar-brand img {
+        display: block;
+        margin: 0 auto;
+      }
+      .navbar-nav > li > a {
+        font-size: 18px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 36px;
+      }
+      h2 {
+        color: skyblue; /* 內容規劃 */
+      }
+      #contents {
+        width: 1000px;
+        margin: 10px auto;
+        padding: 20px 40px;
+        border-radius: 900px / 0px;
+        background-color: #fff;
+      }
+      .word {
+        font-size: 18px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      /* 新增懸浮方塊樣式 */
+#floatingMenu {
+  position: fixed;
+  top: 50%;
+  left: 10px;  /* 設置菜單距離頁面左邊 10px */
+  transform: translateY(-50%);  /* 將菜單垂直居中 */
+  background-color: #fff;
+  border: 2px solid #f2f3f4;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#floatingMenu a {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  margin: 5px 0;
+}
+
+#floatingMenu a:hover {
+  background-color: #f2f3f4;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">
+            <img class="image-border" alt="網站品牌標誌" src="../1111771/nail.jpg" width="25" height="25">
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">導覽按鈕</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="2004_nails.html">2004_nails</a></li>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="種類.html">種類</a></li>
+            <li><a href="形狀.html">形狀</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">風格<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="1.html">法式</a></li>
+                <li><a href="2.html">貓眼</a></li>
+                <li><a href="3.html">素色</a></li>
+                <li><a href="4.html">節日</a></li>
+                <li><a href="5.html">其他</a></li>
+              </ul>
+            </li>
+            <li><a href="預約.html">預約</a></li>
+            <li><a href="網站製作分析.html">網站製作分析</a></li>
+            <li><a href="網站的主要內容.html">網站的主要內容</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search" id="searchForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="請輸入關鍵字">
+            </div>
+            <button type="submit" class="btn btn-default">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 左側懸浮方塊 -->
+    <div id="floatingMenu">
+      <a href="#home">首頁</a>
+      <a href="#2004_nails">2004_nails</a>
+      <a href="#categories">種類</a>
+      <a href="#shapes">形狀</a>
+      <a href="#styles">風格</a>
+      <a href="#booking">預約</a>
+      <a href="#analysis">網站製作分析</a>
+    </div>
+
+    <section>
+      <header>
+        <h1>網站的主要內容</h1>
+      </header>
+      <section id="contents" class="word">
+        <h2 id="home">內容規劃與說明</h2>
+        <h2 id="index">首頁</h2>
+        <center><img src="../1111771/主1.png"><br>圖一</center>
+        <center><img src="../1111771/主2.png"><br>圖二</center>
+        <p>圖一一開始是輪播的美甲照片，但因為我不是真的開美甲店所以到處搜集網路上的照片，再加上我沒有把名字馬賽克或是裁掉是因為要尊重作者以及客人，當然有些照片本來就沒有加上美甲店的名字（圖源大多數來自：pinterest和小紅書 ）。圖二是聯絡資訊與門市位置，一目了然也方便大家尋找，地址是我家附近的巷子，因為我真的不知道可以設定在哪，原本甚至還是放元智大學！後面還有放上課本23-11的頁尾，就有一點專業的感覺了。</p>
+        
+        <h2 id="2004_nails">2004_nails</h2>
+        <center><img src="../1111771/主3.png"><br>圖三</center>
+        <center><img src="../1111771/主4.png"><br>圖四</center>
+        <p>圖三我是要設定一種店家名片的感覺，裡面的內容是美甲店的基本介紹和特色。圖四我用canva製作了一個很像instagram的個人頁面的照片，讓大家覺得真的有這間店，旁邊還備註一些字說關注instagram可以看到一些優惠消息！</p>
+        
+        <h2 id="categories">種類</h2>
+        <center><img src="../1111771/主5.png"><br>圖五</center>
+        <center><img src="../1111771/主6.png"><br>圖六</center>
+        <p>圖五、圖六是美甲種類，可以依照自己的需求去做選擇。</p>
+        
+        <h2 id="shapes">形狀</h2>
+        <center><img src="../1111771/主7.png"><br>圖七</center>
+        <p>圖七是美甲的形狀，可以依照自己的喜好去做選擇。</p>
+        
+        <h2 id="styles">風格</h2>
+        <center><img src="../1111771/主8.png"><br>圖八</center>
+        <center><img src="../1111771/主9.png"><br>圖九</center>
+        <center><img src="../1111771/主10.png"><br>圖十</center>
+        <p>法式、貓眼、素色和其他，我是利用同一種風格去製作的，都是參考pinterest的頁面(如圖八)，而節日(圖九、圖十)比較不一樣，是可以根據現在時間去做一些參考，像是現在快過年了，就可以點選新年的那格，然後彈出的視窗會有很多新年美甲可以參考並且以滾動視窗來呈現。</p>
+        
+        <h2 id="booking">預約</h2>
+        <center><img src="../1111771/主11.png"><br>圖十一</center>
+        <center><img src="../1111771/主12.png"><br>圖十二</center>
+        <center><img src="../1111771/主13.png"><br>圖十三</center>
+        <p>圖十一和十二是預約的畫面，上面沒有導覽列是因為想要讓他有一種跳出來的感覺，每個欄位都是必填，而日期是可以按右邊的小日曆自己選日期的，最下面的備註是讓客人可以填寫內容，希望美甲師看看有什麼東西需要注意之類的(備註不是必填)，不想預約也可以按返回首頁，圖十三是填完預約並且送出的畫面。</p>
+        
+        <h2 id="analysis">網站製作分析</h2>
+        <center><img src="../1111771/主14.png"><br>圖十四</center>
+        <p>圖十四是利用摺疊來呈現我喜歡的網站。</p>
+      </section>
+
+      <button id="backToTop">back to top</button>
+    </section>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const backToTopButton = document.getElementById('backToTop');
+        if (window.scrollY > 200) { 
+          backToTopButton.style.display = 'block';
+        } else {
+          backToTopButton.style.display = 'none';
+        }
+      });
+
+      document.getElementById('backToTop').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Prevent the form submission
+      document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+      });
+    </script>
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+      <p>&copy;2004_nails&middot;
+        <a href="#">隱私權政策</a>&middot;
+        <a href="#">服務條款</a>
+      </p>
+    </footer>
+  </body>
+</html>
